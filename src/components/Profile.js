@@ -5,7 +5,7 @@ class Profile extends React.Component {
 	render() {
 		return (
 			<div className="profile">
-				<icon className="icon">{this.props.icon}</icon>
+				<div className="icon">{this.props.icon}</div>
 				{this.props.name}
 			</div>
 		)

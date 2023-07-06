@@ -1,13 +1,24 @@
 import React from "react";
-import { Select } from "antd";
+import { Button, Select } from "antd";
 
 class DropDownList extends React.Component {
-
+	constructor(props) {
+		super(props);
+		this.state = {
+			disabledButton: true
+		}
+	}
 	render() {
 		return (
 			<div className="dropDownList">
 				<p>{this.props.title}</p>
-				<Select className="select" options={this.props.options} onChange={this.props.onChange}/>
+				<Select className="select" id="select" virtual={false} options={this.props.options} onSelect={this.props.onChange} onChange={() => {
+					this.setState({ disabledButton: false })
+				}} />
+				<Button size="small" disabled={this.state.disabledButton} onClick={() => {
+					//Написать код для очистки фильтра
+					this.setState({ disabledButton: true })
+				}}>Убрать фильтр</Button>
 			</div>)
 	}
 }

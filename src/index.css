@@ -7,17 +7,21 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+a{
+	text-decoration: none;
+}
+
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 		monospace;
 }
 
-main{
-	margin-left: 100px;
-	width: 80%;
+main {
+	margin-left: 30px;
+	width: 100%;
 }
 
-.main{
+.main {
 	display: flex;
 }
 
@@ -25,9 +29,30 @@ aside {
 	width: 10%;
 }
 
+.menuButton {
+	width: 100%;
+	margin-top: 5px;
+	margin-left: 15px;
+}
+
+.selectBlock {
+	width: 90%;
+	margin-left: 15px;
+	margin-top: 5px;
+	border: solid;
+	border-color: #cae4fc;
+	box-shadow: 5px 3px 3px #cae4fc;
+	border-width: 2px;
+	border-radius: 5px;
+	padding: 0 7px 7px;
+}
+
 .selectElement {
+	display: flex;
+	width: 100%;
 	margin: 15px;
 	color: #838382;
+	font-weight: 500;
 }
 
 .selectElement:hover {
@@ -48,82 +73,132 @@ aside {
 	margin-left: 15px;
 	font-size: 17px;
 	background-color: rgb(67, 161, 255);
-	color:#fff
+	color: #fff
 }
 
-.profile .icon{
+.profile .icon {
 	font-size: 35px;
 }
 
-.countData{
+.countData {
 	margin-bottom: 5px;
 }
 
-.paginationBlock{
+.paginationBlock {
 	margin-top: 5px;
 	margin-left: 65%;
 	width: 40%;
 }
 
-.pagination{
+.pagination {
 	display: flex;
 	justify-content: center;
 }
 
-.buttons{
+.buttons {
 	display: flex;
 	justify-content: space-around;
 	margin: 5px 25%;
 	width: 50%;
 }
 
-.status{
+.status {
 	color: white;
-	width: 15%;
-	text-align: center;
+	width: 100%;
 	border-radius: 5px;
 	font-weight: 500;
 }
 
 .new {
 	background-color: #b8b8b7;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.approved{
-background-color: #1c77cc;
+.approved {
+	background-color: #1c77cc;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.inWork{
-background-color: #FFBA00;
+.inWork {
+	background-color: #FFBA00;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.complited{
-background-color: #24b317;
+.complited {
+	background-color: #24b317;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.canceled{
-background-color: #f7472b;
+.canceled {
+	background-color: #f7472b;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.input{
-	width: 15%;
+.iconStatus{
+	margin-right: 5px;
 }
 
-.dropDownList{
-	width: 15%;
+.input {
+	width: 14%;
 }
 
-.select{
+.dropDownList {
+	width: 14%;
+}
+
+.select {
 	width: 100%;
+	margin-bottom: 3px;
 }
 
-p{
+p {
 	margin: 0;
 }
 
-.filter{
-	display: flex;
-	justify-content: space-around;
+.filters {
 	margin-bottom: 5px;
 }
 
+.filter {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 5px;
+	border: solid;
+	border-color: #cae4fc;
+	box-shadow: 5px 3px 3px #cae4fc;
+	border-width: 2px;
+	border-radius: 5px;
+	padding: 0 7px 7px;
+}
+
+.pagination {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.pageSize {
+	display: flex;
+	margin-left: 3px;
+
+	width: 4%;
+}
+
+.tableTitle{
+	font-weight: 500;
+}
+
+.currentTable{
+	color: rgb(67, 161, 255);
+}

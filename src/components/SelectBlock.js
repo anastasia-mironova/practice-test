@@ -8,7 +8,7 @@ import { MdMap } from "react-icons/md";
 class SelectBlock extends React.Component {
 	render() {
 		return (
-			<div className="selectBlock">
+			<div className="selectBlock" id="selectBlock">
 				<SelectElement img={<AiFillHeart />} title="Потребности" />
 				<SelectElement img={<BsFillBookmarkFill />} title="Конфигурации" />
 				<SelectElement img={<MdPhotoCamera />} title="Среды" />

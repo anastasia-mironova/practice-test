@@ -79,7 +79,7 @@ export class Api {
 				results
 			}
 
-			setTimeout(() => resolve(result), 800)
+			setTimeout(() => resolve(result), 300)
 		})
 	}
 }
